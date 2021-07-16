@@ -1,10 +1,10 @@
-from transformers import DistilBertTokenizer, DistilBertForSequenceClassification, AdamW
+from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 import torch
 
 from flask import render_template, request, Flask
 
-tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
-model = DistilBertForSequenceClassification.from_pretrained('distilbert-base-uncased')
+tokenizer = BertTokenizer.from_pretrained('prajjwal1/bert-tiny')
+model = BertForSequenceClassification.from_pretrained('prajjwal1/bert-tiny')
 optim = AdamW(model.parameters(), lr=5e-5)
 
 app = Flask(__name__)
