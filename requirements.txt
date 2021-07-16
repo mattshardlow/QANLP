@@ -1,3 +1,4 @@
+http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl
 certifi==2021.5.30
 charset-normalizer==2.0.2
 click==8.0.1
@@ -19,7 +20,6 @@ requests==2.26.0
 sacremoses==0.0.45
 six==1.16.0
 tokenizers==0.10.3
-torch==1.9.0
 tqdm==4.61.2
 transformers==4.8.2
 typing-extensions==3.10.0.0
