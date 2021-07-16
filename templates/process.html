@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>QANLP</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="brandname">
+                   NLP tasks as Question Answering
+        </div>
+    </div>
+</header>
+
+The text: 
+<br><br>
+    {{ text }}
+<br><br>
+was predicted with the value:
+    {{prediction}}
+<br><br>
+for the question:
+    {{question}}
+<br><br>
+
+Is this correct?
+
+        <div class="container">
+                <form action="{{url_for('process')}}" method="POST">
+                <input type="submit" value="yes">
+        </form>
+        </div>
+
+        <div class="container">
+                <form action="{{url_for('process_no')}}" method="POST">
+                <input type="submit" value="no">
+        </form>
+        </div>
+
+        <div class="container">
+                <form action="{{url_for('complete')}}" method="POST">
+                <input type="submit" value="complete">
+        </form>
+        </div>
+
+So far {{correct}} out of {{count}} were correct.
+{{remaining}} docs remain.
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+        <title>QANLP</title>
+        <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+        <header>
+                <div class="container">
+                <div id="brandname">
+                        NLP tasks as Question Answering
+                </div>
+        </div>
+        </header>
+        <div class="container">
+                <form action="{{url_for('process')}}" method="POST">
+                <p>Enter Your Question Here</p>
+            <label>
+                <textarea name="question" rows="3" cols="40"></textarea>
+            </label>
+                <p>Enter Your corpus here, one line per entry</p>
+            <label>
+                <textarea name="corpus" rows="20" cols="40"></textarea>
+            </label>
+            <br/>
+                <input type="submit" value="process">
+        </form>
+        </div>
+</body>
+</html>

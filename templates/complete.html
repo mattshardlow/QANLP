@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>QANLP</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="brandname">
+                   NLP tasks as Question Answering
+        </div>
+    </div>
+</header>
+
+{{num}} docs evaluated with the following results:
+
+{{pred_table|safe}}
+
+<div class="container">
+  <form action="{{url_for('home')}}">
+    <input type="submit" value="Start Again?">
+  </form>
+</div>
+
+
+</body>
+</html>
